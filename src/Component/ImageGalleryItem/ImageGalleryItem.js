@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./style.module.css";
 
-const ImageGalleryItem = ({ webformatURL, tags, largeImageURL }) => (
+const ImageGalleryItem = ({ webformatURL, largeImageURL }) => (
   <li className={style.ImageGalleryItem}>
     <img
       src={webformatURL}
-      alt={tags}
-      data-url={largeImageURL}
+      alt=""
+      data-img={largeImageURL}
       className={style.ImageGalleryItem__image}
     />
   </li>
